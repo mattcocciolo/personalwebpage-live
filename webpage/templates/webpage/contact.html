@@ -1,0 +1,58 @@
+{% extends 'webpage/index.html' %}
+{% load static %}
+{% block content %}
+<h2>Contacto</h2>
+<p>Envíanos tu mensaje </p>
+<div class="row">
+    <div class="col-8 col-12-small">
+        <form method="POST" novalidate>
+            {% csrf_token %}
+            <div class="row gtr-uniform gtr-50">
+                <div class="col-6 col-12-xsmall">
+                    <!--<input type="text" name="name" id="name" placeholder="Nombre"/>-->
+                    {{form.name}}
+                </div>
+                <div class="col-6 col-12-xsmall">
+                    <!--<input type="email" name="email" id="email" placeholder="Email"/>-->
+                    {{form.email}}
+
+                </div>
+                <div class="col-12">
+                    <!--<textarea name="message" id="message" placeholder="Mensaje" rows="4"></textarea>-->
+                    {{form.message}}
+                </div>
+            </div>
+            <br>
+            <ul class="actions">
+                <li>
+                    <input type="submit" value="Enviar Mensaje"/>
+                </li>
+            </ul>
+            {% for field in form %}
+                {% if field.errors %}
+                <h3>Ups!!!</h3>
+                <p>Ha habido un error ingrese<strong> {{ field.label }}</strong></p>
+
+                {% endif %}
+            {% endfor %}
+        </form>
+    </div>
+    <div class="col-4 col-12-small">
+        <ul class="labeled-icons">
+            <li>
+                <h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
+                +34 674 950 xxx
+            </li>
+            <li>
+                <h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+                <a href="https://mail.google.com">matiascocciolo@gmail.com</a>
+            </li>
+            <li>
+                <h3 class="icon brands solid fa-github"><span class="label">Email</span></h3>
+                <a href="https://github.com/mattcocciolo"><span class="label">Github</span></a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+{% endblock content %}
