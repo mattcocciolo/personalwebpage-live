@@ -34,7 +34,6 @@ Flask-WTF==0.14.3
 fluidity-sm==0.2.0
 gunicorn==20.0.4
 idna==2.10
-initial-setup==0.3.83
 invoke==1.4.1
 ipython==7.18.1
 ipython-genutils==0.1.0
