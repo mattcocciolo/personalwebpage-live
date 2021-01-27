@@ -46,7 +46,6 @@ ldap3==2.8.1
 lexicon==1.0.0
 MarkupSafe==1.1.1
 mccabe==0.6.1
-mod-wsgi==4.7.1
 nftables==0.1
 numpy==1.19.5
 olefile==0.46
