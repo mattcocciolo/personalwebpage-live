@@ -82,7 +82,6 @@ pyOpenSSL==20.0.1
 PyQt5==5.15.2
 PyQt5-sip==12.8.1
 PyQt5-stubs==5.14.2.2
-python-meh==0.50
 python-utils==2.4.0
 pytz==2020.5
 pyudev==0.22.0
