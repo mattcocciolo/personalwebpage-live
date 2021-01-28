@@ -1,1 +1,1 @@
-web: gunicorn strata.wsgi.py --log-file -
+web: gunicorn strata.wsgi --log-file -
