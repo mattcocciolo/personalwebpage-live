@@ -23,7 +23,7 @@ def contact(request):
 
 def email_message_contact(name, email, text_message):
     email_subject = 'Personal WebPage Contact Notification'
-    text_message = f'Hola Matias, una persona llamada, {name}, y con Email {email}, te ha enviado el siguiente mensaje \n\n' \
+    text_message = f'Hola Matias, una persona llamada, {name}, y con Email {email}, te ha enviado el siguiente mensaje: \n\n' \
                    f'{text_message} '
     to_email = 'matiascocciolo@gmail.com'
     email = EmailMessage(email_subject, text_message, to=[to_email])
