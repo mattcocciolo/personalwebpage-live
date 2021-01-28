@@ -123,11 +123,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
-STATICFILES_DIRS = os.path.join(BASE_DIR, 'static')
 MEDIA_URL = '/images/'
-MEDIA_ROOT = [
-    os.path.join(BASE_DIR, 'static/images')
-]
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'static')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 
 # SMTP Configuracion
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
